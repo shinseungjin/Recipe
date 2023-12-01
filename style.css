@@ -1,0 +1,879 @@
+html {
+  background: rgba(122, 191, 191, 0.5);
+}
+body {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  width: 414px;
+}
+/* Text Styling */
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+  padding-top: 130px;
+}
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 0.5rem;
+}
+nav {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+nav a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+}
+nav span {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  color: #0d0d0d;
+  font-weight: bold;
+}
+menu li {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+}
+#social li {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+}
+footer {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+}
+dt {
+  font-weight: bold;
+}
+dt,
+dd {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  display: inline;
+}
+li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+/* Top Nav */
+#topNav {
+  margin-top: 90px;
+}
+#topNav ul {
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  margin-left: -50px;
+  align-items: center;
+  margin-top: 90px;
+}
+#topNav a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  color: #eb5428;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+#topNav figure {
+  display: inline-block;
+  margin: 0;
+  width: 90px;
+  height: 755px;
+  top: -713px;
+}
+/* Taco Image */
+#taco {
+  width: 414px;
+  padding-top: 15px;
+}
+#details {
+  padding: 0.5rem;
+}
+/* Aside */
+aside {
+  position: relative;
+  background-color: #7abfbf;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+aside img {
+  float: left;
+  margin-top: -100px;
+  margin-left: -10px;
+  transform: scale(65%);
+}
+aside h3 {
+  margin-left: 200px;
+}
+.sides {
+  display: inline-block;
+  width: 350px;
+  margin-left: 20px;
+}
+/* Main Navigation */
+#main-nav {
+  width: 414px;
+  height: 125px;
+  margin-top: -40px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+#main-nav h2 {
+  visibility: hidden;
+  height: 1px;
+}
+#mainNav li {
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #eb5428;
+}
+#mainNav a {
+  text-decoration: none;
+  color: #eb5428;
+}
+#mainNav ul {
+  margin: 0;
+  padding: 0;
+  max-height: 0px;
+  color: #eb5428;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+#main-nav ul {
+  text-align: center;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+#main-nav li a {
+  display: block;
+  padding: 20px 20px;
+  margin-bottom: 2px;
+  text-decoration: none;
+  color: #eb5428;
+}
+.hamburger-icon {
+  position: relative;
+  width: 100%;
+  top: 10px;
+  left: 20px;
+}
+.hamburger-hover:hover {
+  width: 40px;
+  height: 50px;
+}
+label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 11px;
+  position: relative;
+  user-select: none;
+}
+#main-nav label span {
+  display: block;
+  position: relative;
+  left: 72px;
+  bottom: -80px;
+  transition: background-color 0.2s ease-out;
+}
+#main-nav label span:before,
+#main-nav label span:after {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+#main-nav label span:before {
+  top: 5px;
+}
+#main-nav label span:after {
+  top: -5px;
+}
+#main-nav input {
+  display: none;
+}
+#main-nav input:checked ~ ul {
+  max-height: 500px;
+}
+#main-nav input:checked ~ label span {
+  background: transparent;
+}
+#main-nav input:checked ~ label:not(.steps) span:before,
+input:checked ~ label:not(.steps) span:after {
+  top: 0;
+}
+[href="#home"] {
+  position: absolute;
+  top: 2px;
+  transform: translate(-50%, -50%);
+  cursor: default;
+}
+.icon-tabler-tools-kitchen {
+  background-color: #eb5428;
+  position: absolute;
+  top: 33px;
+  padding: 20px 80px;
+  left: 115px;
+  margin: 10px;
+}
+.avatar {
+  position: absolute;
+  top: 92px;
+  right: 20px;
+}
+.icon-tabler-user-circle {
+  stroke: #eb5428;
+  position: absolute;
+  top: 50px;
+  right: 27px;
+}
+#main-nav a:hover,
+#main-nav input:hover {
+  background-color: #eb5428;
+  color: #ffffff;
+}
+.menu {
+  margin-top: -50px;
+  margin-left: -50px;
+}
+.breakfast,
+.brunch,
+.lunch,
+.dinner,
+.appetizers,
+.desserts,
+.beverages {
+  display: none;
+}
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.search-bar input {
+  width: 250px;
+  border: 3px solid #eb5428;
+  padding: 5px;
+  background-color: #ffffff;
+}
+button {
+  background-color: #eb5428;
+  border-style: none;
+  cursor: pointer;
+}
+.icon-tabler-search {
+  stroke: #ffffff;
+}
+/* Connect */
+#Connect {
+  display: inline-block;
+  padding-top: 10px;
+}
+#Connect ul {
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+#Connect li {
+  color: #eb5428;
+  font: 16px "bebas neue";
+}
+#Connect figure {
+  display: inline-block;
+  margin-left: 0;
+  margin-top: -10px;
+  color: #eb5428;
+}
+#Connect a {
+  text-decoration: none;
+}
+/* Footer */
+footer h2 {
+  visibility: hidden;
+}
+footer p {
+  font: 20px "bebas neue";
+  text-align: center;
+  top: 200px;
+  margin-top: 200px;
+}
+footer img {
+  transform: scale(50%);
+  margin-top: -450px;
+  margin-left: -50px;
+}
+/* Medium Screen 768px */
+@media screen and (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+}
+h1 {
+  text-align: left;
+  text-transform: uppercase;
+  font: 40px "bebas neue";
+  margin-top: 100px;
+  padding-top: 130px;
+}
+#topNav {
+  margin-top: -80px;
+  margin-left: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+#topNav ul {
+  list-style: none;
+  text-align: center;
+  margin-left: -50px;
+  align-items: center;
+  margin-top: 90px;
+}
+#topNav li {
+  color: #eb5428;
+  font: 16px "bebas neue";
+  margin: 0 60px;
+}
+#topNav figure {
+  display: inline-block;
+  margin: 0 15px;
+}
+#topNav a {
+  text-decoration: none;
+}
+li {
+  font: 16px "montserrat";
+}
+#tacoImg {
+  width: 768px;
+  margin-top: -78px;
+  z-index: 2;
+}
+p {
+  font: 16px "montserrat";
+}
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font: 30px "bebas neue";
+}
+#details {
+  background-color: #f2f2f2;
+  color: black;
+  position: relative;
+  top: 300px;
+  height: 130px;
+}
+#details h2 {
+  position: relative;
+  top: -300px;
+  margin: 0;
+}
+dt {
+  font-weight: bold;
+}
+dt,
+dd {
+  display: inline;
+  position: relative;
+  left: 270px;
+  top: -300px;
+  font: 16px "montserrat";
+}
+.ingredients {
+  position: relative;
+  top: 150px;
+  left: 20px;
+}
+.ingredients,
+.directions {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.directions {
+  position: relative;
+  width: 500px;
+  top: -175px;
+  left: 250px;
+}
+
+.directions h3 {
+  position: relative;
+  left: 100px;
+}
+aside {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #7abfbf;
+}
+
+aside img {
+  float: left;
+  transform: scale(65%);
+  margin-top: -100px;
+  margin-left: -10px;
+}
+aside h3 {
+  margin-left: 200px;
+}
+.sides {
+  display: inline-block;
+  width: 350px;
+  margin-left: 20px;
+}
+#main-nav {
+  width: 768px;
+  height: 255px;
+}
+
+#main-nav li {
+  width: 115px;
+}
+
+#main-nav a {
+  width: 70px;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+#main-nav label,
+#dropdown {
+  visibility: hidden;
+}
+
+[href="#home"] {
+  left: -70px;
+}
+
+.icon-tabler-tools-kitchen {
+  position: absolute;
+  padding: 28px 13px;
+}
+
+#main-nav img {
+  width: 50px;
+}
+
+#main-nav ul {
+  list-style: none;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+.nav-text {
+  position: relative;
+  top: 70px;
+  margin-left: -30px;
+}
+
+.breakfast,
+.brunch,
+.lunch,
+.dinner,
+.appetizers,
+.desserts,
+.beverages {
+  visibility: visible;
+  display: flex;
+  position: relative;
+  top: -30px;
+  left: 15%;
+}
+.search-bar {
+  display: flex;
+  position: fixed;
+  top: 25px;
+  right: -255px;
+  z-index: 1;
+}
+
+.search-bar input {
+  border: 3px solid #eb5428;
+  padding: 5px;
+  background-color: #ffffff;
+  width: 250px;
+}
+
+button {
+  background-color: #eb5428;
+  border-style: none;
+  cursor: pointer;
+}
+
+.icon-tabler-search {
+  stroke: #ffffff;
+}
+#Connect {
+  display: inline-block;
+  padding-top: 40px;
+  margin-left: 360px;
+}
+
+#Connect ul {
+  list-style: none;
+  text-align: center;
+}
+#Connect li {
+  color: #eb5428;
+  font: 16px "bebas neue";
+}
+#Connect figure {
+  display: inline-block;
+  margin-left: 0;
+}
+#Connect img {
+  clear: both;
+  margin-top: -60px;
+}
+#Connect a {
+  text-decoration: none;
+}
+footer h2 {
+  visibility: hidden;
+}
+footer p {
+  font: 20px "bebas neue";
+  text-align: center;
+  width: 200px;
+  margin: 90px;
+  padding-top: 20px;
+}
+footer img {
+  transform: scale(50%);
+  margin-top: -530px;
+  margin-left: -50px;
+  clear: both;
+  display: block;
+}
+.details {
+  text-align: center;
+}
+.ingredients {
+  display: inline-block;
+  width: 160px;
+}
+
+.ingredients h2 {
+  margin-bottom: 10px;
+}
+
+.ingredients li {
+  margin: 4px 0;
+}
+
+.directions {
+  width: 550px;
+}
+.ingredients,
+.directions {
+  margin: 0 auto;
+  display: inline-block;
+}
+.sideDishes {
+  display: inline-block;
+  width: 350px;
+  margin-left: 20px;
+}
+/* Medium Screen 1280px */
+@media screen and (min-width: 1280px) {
+  body {
+    width: 1280px;
+    margin-top: -40px;
+  }
+}
+h1 {
+  text-align: center;
+  margin-top: 170px;
+  margin-bottom: -20px;
+}
+#topNav {
+  display: inline-block;
+  background-color: rgba(255, 255, 255);
+  width: 90px;
+  height: 755px;
+  position: relative;
+  top: -713px;
+}
+#topNav ul {
+  margin: 0 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 10px;
+}
+#topNav li {
+  color: #eb5428;
+  font: 16px "bebas neue";
+}
+#topNav figure {
+  display: inline-block;
+  margin: 0 15px;
+}
+#text {
+  display: inline-block;
+  width: 670px;
+  position: absolute;
+  padding-left: 10px;
+  line-height: 30px;
+}
+#topNav,
+#text {
+  margin-bottom: -900px;
+}
+#p1 {
+  position: relative;
+  width: 600px;
+  right: -630px;
+  top: -580px;
+  margin: 30px;
+}
+#p2 {
+  position: relative;
+  width: 600px;
+  right: -630px;
+  top: -600px;
+  margin: 30px;
+}
+#taco {
+  position: relative;
+  width: 470px;
+  height: 590px;
+  left: 170px;
+  top: 50px;
+}
+#details {
+  background-color: black;
+  color: #7abfbf;
+  position: relative;
+  top: -20px;
+  height: 130px;
+}
+dl {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  margin-top: -40px;
+  margin-left: 120px;
+  text-align: center;
+  top: -10px;
+}
+dt {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  left: -50px;
+  top: 5px;
+  font-weight: bold;
+}
+dd {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  left: -90px;
+  top: 25px;
+}
+.ingredients {
+  position: relative;
+  left: 20px;
+  top: -300px;
+}
+.directions {
+  position: relative;
+  width: 900px;
+  top: -720px;
+  right: -300px;
+}
+.sides {
+  position: relative;
+  top: -150px;
+}
+.sides img {
+  width: 120px;
+  height: 120px;
+  padding-bottom: 70px;
+  position: relative;
+  left: -80px;
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 100px;
+}
+.sides h3 {
+  position: relative;
+  left: 10px;
+}
+.sides p {
+  width: 150px;
+  position: relative;
+  top: -200px;
+  left: 150px;
+}
+#main-nav {
+  width: 1280px;
+  height: 162px;
+  z-index: 2;
+}
+#main-nav li {
+  width: 115px;
+}
+#main-nav a {
+  width: 70px;
+}
+.hamburger-icon {
+  display: none;
+}
+#main-nav label,
+#dropdown {
+  visibility: hidden;
+}
+[href="#home"] {
+  left: -70px;
+  top: 19px;
+  padding-left: 57px;
+}
+.icon-tabler-tools-kitchen {
+  padding: 31px 13px;
+}
+#main-nav img {
+  width: 50px;
+}
+#main-nav ul {
+  list-style: none;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -7px;
+}
+.nav-text {
+  position: relative;
+  top: 55px;
+}
+.breakfast,
+.brunch,
+.lunch,
+.dinner,
+.appetizers,
+.desserts,
+.beverages {
+  top: -30px;
+  left: 15%;
+}
+.icon-tabler-user-circle {
+  width: 60px;
+  height: 60px;
+}
+.avatar {
+  top: 115px;
+  right: 27px;
+}
+.search-bar {
+  position: relative;
+  left: 10px;
+  top: -2670px;
+}
+.search-bar input {
+  width: 300px;
+  height: 50px;
+  border-width: 4px;
+}s
+#Connect {
+  display: inline-block;
+  padding-top: 50px;
+  margin-left: 720px;
+}
+#Connect ul {
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+#Connect li {
+  color: #eb5428;
+  font: 16px "bebas neue";
+}
+#Connect figure {
+  display: inline-block;
+  margin-left: 0;
+  margin-top: -10px;
+}
+#Connect figure,
+#Connect li {
+  padding-left: 20px;
+  align-items: center;
+}
+#Connect a {
+  text-decoration: none;
+}
+footer h2 {
+  display: inline-block;
+}
+footer p {
+  margin: auto;
+  padding: 0;
+  position: relative;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  top: -400px;
+  left: 300px;
+}
+footer img {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  top: -780px;
+  left: 50px;
+}
+#text {
+  display: inline-block;
+  width: 670px;
+  position: absolute;
+  padding-left: 10px;
+  line-height: 30px;
+}
+#topNav,
+#tacoImg,
+#text {
+  margin-bottom: -900px;
+}
