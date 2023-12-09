@@ -196,15 +196,22 @@ h1 {
   font-family: "Montserrat", sans-serif;
   list-style-type: none;
 }
+dl {
+  margin-bottom: 10px;
+}
 dt {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: bold;
+  padding-left: 10px;
+  margin-bottom: 5px;
 }
 dd {
   display: inline-block;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  margin-bottom: 5px;
 }
 .ingredients li {
   padding: 5px;
@@ -551,7 +558,6 @@ footer img {
     overflow: visible;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    position: fixed;
     width: 768px;
     padding-top: 40px;
   }
@@ -613,6 +619,7 @@ footer img {
   .details-grid-item {
     text-align: center;
   }
+
   .mid-grid {
     width: 768px;
     display: grid;
