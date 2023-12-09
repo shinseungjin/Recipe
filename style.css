@@ -123,860 +123,370 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-html {
-  background: rgba(122, 191, 191, 0.5);
-}
-body {
-  background-color: #f2f2f2;
-}
-/* Text Styling */
-h1 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 50px;
-  padding-top: 130px;
-}
-h2 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-}
-h3 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 25px;
-}
-p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-}
-nav {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-}
-nav a {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-}
-nav span {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-  color: #0d0d0d;
-  font-weight: bold;
-}
-menu li {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-}
-#social li {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-}
-footer {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-  border-top: 16px solid lightgray;
-}
-dt {
-  font-weight: bold;
-}
-dt,
-dd {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  display: inline;
-}
-li {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-}
-input {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-}
-/* Top Nav */
-#topNav ul {
-  display: flex;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0.5rem;
-}
-#topNav a {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-  color: #eb5428;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-}
-/* Taco Image */
-#taco {
-  width: 100%;
-}
-#p1,
-#p2 {
-  padding: 0.5rem;
-}
-/* Details */
-#details {
-  padding: 0.5rem;
-}
-#details dl {
-  padding: 0.2rem;
-}
-/* Ingredients */
-.ingredients li {
-  padding: 0.5rem;
-}
-
-/* Directions */
-.directions li {
-  padding: 0.5rem;
-}
-/* Aside */
-aside {
-  background-color: #7abfbf;
-  /* display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr; */
-}
-aside h2 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  padding: 16px;
-}
-.sides {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 3fr;
-  padding: 12px;
-}
-.sides div {
-  display: flex;
-  gap: 6px;
-}
-.sides img {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row: span 4;
-  width: 80%;
-}
-.sides h3 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  margin-bottom: 2px;
-}
-.sides p:nth-of-type(2) {
-  font-weight: bold;
-}
-.dishes {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Main Navigation */
-#main-nav {
-  width: 100%;
-  height: 125px;
-  background-color: #ffffff;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-  z-index: 1;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-#main-nav h2 {
-  visibility: hidden;
-  height: 1px;
-}
-#mainNav li {
-  list-style: none;
-  text-align: center;
-  text-transform: uppercase;
-  color: #eb5428;
-}
-#mainNav a {
-  text-decoration: none;
-  color: #eb5428;
-}
-#mainNav ul {
-  margin: 0;
-  padding: 0;
-  max-height: 0px;
-  color: #eb5428;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-#main-nav ul {
-  text-align: center;
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-}
-#main-nav li a {
-  display: block;
-  padding: 20px 20px;
-  margin-bottom: 2px;
-  text-decoration: none;
-  color: #eb5428;
-}
-.hamburger-icon {
-  position: relative;
-  width: 100%;
-  top: 10px;
-  left: 20px;
-}
-.hamburger-hover:hover {
-  width: 40px;
-  height: 50px;
-}
-label {
-  cursor: pointer;
-  display: inline-block;
-  padding: 11px;
-  position: relative;
-  user-select: none;
-}
-#main-nav label span {
-  display: block;
-  position: relative;
-  left: 72px;
-  bottom: -80px;
-  transition: background-color 0.2s ease-out;
-}
-#main-nav label span:before,
-#main-nav label span:after {
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-#main-nav label span:before {
-  top: 5px;
-}
-#main-nav label span:after {
-  top: -5px;
-}
-#main-nav input {
-  display: none;
-}
-#main-nav input:checked ~ ul {
-  max-height: 500px;
-}
-#main-nav input:checked ~ label span {
-  background: transparent;
-}
-#main-nav input:checked ~ label:not(.steps) span:before,
-input:checked ~ label:not(.steps) span:after {
-  top: 0;
-}
-[href="#home"] {
-  position: absolute;
-  top: 2px;
-  transform: translate(-50%, -50%);
-  cursor: default;
-}
-.icon-tabler-tools-kitchen {
-  background-color: #eb5428;
-  position: absolute;
-  top: 33px;
-  padding: 20px 80px;
-  left: 115px;
-  margin: 10px;
-}
-.avatar {
-  position: absolute;
-  top: 92px;
-  right: 20px;
-}
-.icon-tabler-user-circle {
-  stroke: #eb5428;
-  position: absolute;
-  top: 50px;
-  right: 27px;
-}
-#main-nav a:hover,
-#main-nav input:hover {
-  background-color: #eb5428;
-  color: #ffffff;
-}
-.menu {
-  margin-top: -50px;
-  margin-left: -50px;
-}
-.breakfast,
-.brunch,
-.lunch,
-.dinner,
-.appetizers,
-.desserts,
-.beverages {
-  display: none;
-}
-/* Search Bar */
-.search-bar {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
-.search-bar input {
-  width: 250px;
-  border: 3px solid #eb5428;
-  padding: 5px;
-  background-color: #ffffff;
-}
-button {
-  background-color: #eb5428;
-  border-style: none;
-  cursor: pointer;
-}
-.icon-tabler-search {
-  stroke: #ffffff;
-}
-/* Footer */ /* Connect */
-#connect ul {
-  padding-top: 10px;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 16px;
-}
-#connect li a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #eb5428;
-}
-#connect p {
-  font: 16px "bebas neue";
-  list-style-type: none;
-}
-#connect a {
-  text-decoration: none;
-}
-#connect img {
-  width: 50%;
-  margin: 0 auto;
-  display: block;
-}
-footer h2 {
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-footer p {
-  font: 20px "bebas neue";
-  text-align: center;
-  top: 200px;
-}
-.footerinfo {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 16px;
-}
-
-/* MEDIA QUERY FOR 768px */
-@media screen and (min-width: 768px) {
-  h1 {
-    text-align: left;
-    text-transform: uppercase;
-    font: 40px "bebas neue";
-    padding-left: 16px;
-  }
-  #topNav {
-    background-color: rgba(255, 255, 255, 0.6);
-    position: relative;
-  }
-  #topNav ul {
-    list-style: none;
-    text-align: center;
-    align-items: center;
-  }
-  #topNav li {
-    color: #eb5428;
-    font: 16px "bebas neue";
-    margin: 0 60px;
-  }
-  #topNav figure {
-    display: inline-block;
-    margin: 0 15px;
-  }
-  #topNav a {
-    text-decoration: none;
-  }
-  li {
-    font: 16px "montserrat";
-  }
-  #tacoImg {
-    z-index: 2;
-  }
-  p {
-    font: 16px "montserrat";
-  }
-  h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font: 30px "bebas neue";
-  }
-  #details {
-    background-color: #f2f2f2;
-    color: black;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #details h2 {
-    position: relative;
-    margin: 0;
-  }
-  dt {
-    font-weight: bold;
-  }
-  dt,
-  dd {
-    display: inline;
-    position: relative;
-    font: 16px "montserrat";
-  }
-  .recipe {
-    display: flex;
-    padding: 0.5rem;
-  }
-  .ingredients {
-    position: relative;
-  }
-  .ingredients,
-  .directions {
-    display: inline-block;
+/* Styling */
+@media screen and (min-width: 414px) {
+  html {
+    background: rgba(122, 191, 191, 0.5);
     margin: 0 auto;
   }
-
+  body {
+    background-color: #7abfbf;
+    margin: 0 auto;
+    width: 414px;
+  }
+  h1 {
+    font-size: 40px;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    margin: 0;
+    padding-top: 170px;
+    background-color: #f2f2f2;
+  }
+  .icon-grid {
+    width: 414px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 35px 30px;
+    grid-gap: 1px 10px;
+    justify-items: center;
+    font-size: 20px;
+    font-family: "Bebas Neue", cursive;
+    padding: 0px;
+    list-style-type: none;
+    background-color: #f2f2f2;
+  }
+  .icon-grid-item {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: #eb5428;
+  }
+  #tacos {
+    background-color: #f2f2f2;
+  }
+  #tacos img {
+    width: 414px;
+    height: 100%;
+  }
+  #tacos ul {
+    padding-left: 5px;
+    padding-top: 10px;
+  }
+  #tacos p {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  #tacos h2,
+  .ingredients h2,
+  .directions h2,
+  .side-dish h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Bebas Neue", cursive;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .details-grid-item {
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    list-style-type: none;
+  }
+  dt {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  dd {
+    display: inline-block;
+    font-size: 16px;
+  }
+  .ingredients li {
+    padding: 5px;
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
   .directions {
-    position: relative;
+    padding: 0px;
   }
-
-  .directions h3 {
-    position: relative;
-  }
-  aside {
+  .directions li {
+    margin-left: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #7abfbf;
-    display: grid;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
   }
-  .sides img {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 1/2;
-    width: 80%;
+  .menu {
+    width: 414px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #f2f2f2;
+    border-bottom: 2px solid rgba(13, 13, 13, 0.5);
+    z-index: 99;
   }
-  .sides {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 3fr;
-    padding: 10px;
-  }
-  .sides h3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    margin-bottom: 2px;
-  }
-  .sides p {
-    position: relative;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-  .sides div {
-    display: flex;
-    gap: 6px;
-    grid-column-start: 2;
-  }
-  .dishes p {
-    font-weight: bold;
-  }
-
-  .dishes {
-    flex-direction: row;
-  }
-  .hamburger-icon {
-    display: none;
-  }
-
-  #main-nav label,
-  #dropdown {
-    visibility: hidden;
-  }
-
-  [href="#home"] {
-    left: -70px;
-  }
-
-  .icon-tabler-tools-kitchen {
+  .burger {
     position: absolute;
-    padding: 28px 13px;
+    top: 8px;
+    left: 20px;
   }
-
-  #main-nav img {
-    width: 50px;
-  }
-
-  #main-nav ul {
-    list-style: none;
-    overflow: visible;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-    margin-left: 30px;
-  }
-
-  .nav-text {
-    position: relative;
-    top: 70px;
-    margin-left: -30px;
-  }
-
-  .breakfast,
-  .brunch,
-  .lunch,
-  .dinner,
-  .appetizers,
-  .desserts,
-  .beverages {
-    visibility: visible;
-    display: flex;
-    position: relative;
-    top: -30px;
-    left: 15%;
-  }
-  .search-bar {
-    display: flex;
-  }
-
-  .search-bar input {
-    border: 3px solid #eb5428;
-    padding: 5px;
-    background-color: #ffffff;
-    width: 250px;
-  }
-
-  button {
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 75px;
     background-color: #eb5428;
-    border-style: none;
+    width: 250px;
+    height: 70px;
+  }
+  .home {
+    position: absolute;
+    top: 51px;
+    left: 20px;
+    color: #0d0d0d;
+    font-size: 19px;
+    font-family: "Bebas Neue", cursive;
+  }
+  .profile {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+  }
+  .profile:hover {
+    cursor: pointer;
+    background-color: #eb5428;
+    color: #f2f2f2;
+  }
+  .signin {
+    position: relative;
+    position: absolute;
+    top: 53px;
+    right: 25px;
+    color: #0d0d0d;
+    font-size: 18px;
+    font-family: "Bebas Neue", cursive;
+  }
+  .search-icon:hover {
     cursor: pointer;
   }
-
-  .icon-tabler-search {
-    stroke: #ffffff;
-  }
-  #Connect {
-    display: inline-block;
-    padding-top: 40px;
-    margin-left: 360px;
-  }
-
-  #Connect ul {
-    list-style: none;
-    text-align: center;
-  }
-  #Connect li {
-    color: #eb5428;
-    font: 16px "bebas neue";
-  }
-  #Connect figure {
-    display: inline-block;
-    margin-left: 0;
-  }
-  #Connect img {
-    clear: both;
-    margin-top: -60px;
-  }
-  #Connect a {
-    text-decoration: none;
-  }
-  footer h2 {
-    visibility: hidden;
-  }
-  footer p {
-    font: 20px "bebas neue";
-    text-align: center;
-    width: 200px;
-    margin: 90px;
-    padding-top: 20px;
-  }
-  footer img {
-    transform: scale(50%);
-    margin-top: -530px;
-    margin-left: -50px;
-    clear: both;
-    display: block;
-  }
-  .details {
-    text-align: center;
-  }
-  .ingredients {
-    display: inline-block;
-    width: 160px;
-  }
-
-  .ingredients h2 {
-    margin-bottom: 10px;
-  }
-
-  .ingredients li {
-    margin: 4px 0;
-  }
-
-  .directions {
-    width: 550px;
-  }
-  .ingredients,
-  .directions {
-    margin: 0 auto;
-    display: inline-block;
-  }
-  .sideDishes {
-    display: inline-block;
-    width: 350px;
-    margin-left: 20px;
-  }
-}
-/* MEDIA QUERY FOR 1280px */
-@media screen and (min-width: 900px) {
-  h1 {
-    text-align: center;
-  }
-  #topNav {
-    display: inline-block;
-    background-color: rgba(255, 255, 255);
-  }
-  #topNav ul {
-    margin: 0 0;
-    list-style: none;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 10px;
-  }
-  #topNav li {
-    color: #eb5428;
-    font: 16px "bebas neue";
-  }
-  #topNav figure {
-    display: inline-block;
-    margin: 0 15px;
-  }
-  #text {
-    display: inline-block;
+  .search-icon {
     position: absolute;
-    padding-left: 10px;
-    line-height: 30px;
-  }
-  #p1 {
-    position: relative;
-  }
-  #p2 {
-    position: relative;
-  }
-  #taco {
-    position: relative;
-  }
-  #details {
-    background-color: black;
-    color: #7abfbf;
-    position: relative;
-  }
-  #details div {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-  }
-  dl {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    text-align: center;
-  }
-  dt {
-    display: inline-block;
-    font-weight: bold;
-  }
-  .ingredients {
-    position: relative;
-  }
-  .directions {
-    position: relative;
-  }
-  aside {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  aside h2 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-  }
-  .sides {
-    position: relative;
-    grid-template-columns: 1fr;
-  }
-  .sides {
-    margin-left: 20px;
-    gap: 10px;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 3fr;
-    padding: 12px;
-  }
-  .sides h3 {
-    position: relative;
-  }
-  .sides p {
-    position: relative;
-  }
-  #main-nav {
-    z-index: 2;
-  }
-  #main-nav li {
-    width: 115px;
-  }
-  #main-nav a {
-    width: 70px;
-  }
-  .hamburger-icon {
-    display: none;
-  }
-  #main-nav label,
-  #dropdown {
-    visibility: hidden;
-  }
-  [href="#home"] {
-    left: -70px;
-    top: 19px;
-    padding-left: 57px;
-  }
-  .icon-tabler-tools-kitchen {
-    padding: 31px 13px;
-  }
-  #main-nav img {
-    width: 50px;
-  }
-  #main-nav ul {
-    list-style: none;
-    overflow: visible;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -7px;
-  }
-  .nav-text {
-    position: relative;
-    top: 55px;
-  }
-  .breakfast,
-  .brunch,
-  .lunch,
-  .dinner,
-  .appetizers,
-  .desserts,
-  .beverages {
-    top: -30px;
-    left: 15%;
-  }
-  .icon-tabler-user-circle {
-    width: 60px;
-    height: 60px;
-  }
-  .avatar {
-    top: 115px;
-    right: 27px;
-  }
-  .search-bar {
-    position: relative;
-    left: 10px;
-    top: -2670px;
+    top: 100px;
+    margin-left: 312px;
+    height: 45px;
+    width: 45px;
+    color: #f2f2f2;
+    background-color: #eb5428;
   }
   .search-bar input {
+    position: absolute;
+    top: 100px;
+    margin-left: 50px;
+    height: 40px;
     width: 300px;
-    height: 50px;
-    border-width: 4px;
+    border: 2px solid #eb5428;
   }
-  #Connect {
-    display: inline-block;
-    padding-top: 50px;
-    margin-left: 720px;
+  .menu h2,
+  .search-bar h2,
+  .socials h2 {
+    visibility: hidden;
+    height: 1px;
   }
-  #Connect ul {
-    margin: 0;
+  .menu nav {
+    background-color: #f2f2f2;
+  }
+  .menu ul {
+    margin: 0px;
+    padding: 0px;
     list-style: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Bebas Neue", cursive;
+  }
+
+  .menu li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .menu li:hover {
+    background-color: #eb5428;
+    color: #f2f2f2;
+  }
+  .menu li a {
+    padding-left: 170px;
+    padding-right: 170px;
     text-align: center;
   }
-  #Connect li {
+  .menu img {
+    display: none;
+  }
+  .food {
     color: #eb5428;
-    font: 16px "bebas neue";
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
-  #Connect figure {
+  .food:hover {
+    color: #f2f2f2;
+    text-align: center;
+    background-color: #eb5428;
+    cursor: pointer;
+  }
+  .icon-grid-item {
+    display: grid;
+  }
+  .icon-grid-item:hover {
+    cursor: pointer;
+  }
+  .icon-grid-item a:hover {
+    background-color: #eb5428;
+    color: #f2f2f2;
+    cursor: pointer;
+  }
+  label {
+    cursor: pointer;
     display: inline-block;
-    margin-left: 0;
-    margin-top: -10px;
+    padding: 13px 13px;
+    user-select: none;
   }
-  #Connect figure,
-  #Connect li {
-    padding-left: 20px;
+  label svg {
+    background-color: #ffffff;
+    display: block;
+    position: relative;
+    transition: background-color 0.5s ease-out;
+  }
+  label span:before,
+  label span:after {
+    background: #ffffff;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.4s ease-out;
+    width: 100%;
+  }
+  label span:after {
+    top: -5px;
+  }
+  label span:before {
+    top: 5px;
+  }
+  #dropdown {
+    display: none;
+  }
+  input:checked ~ ul {
+    max-height: 400px;
+  }
+
+  input:checked ~ label span {
+    background: transparent;
+  }
+  input:checked ~ label:not(.steps) span:before,
+  input:checked ~ label:not(.steps) span:after {
+    top: 0;
+  }
+  .socials {
+    background-color: #f2f2f2;
+    padding-top: 20px;
+  }
+  .socials ul {
+    width: 414px;
+    font-family: "Bebas Neue", cursive;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 35px 30px;
+    grid-gap: 1px 10px;
+    justify-items: center;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+  }
+  .social-grid-item {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .socials a {
+    color: #eb5428;
+    text-transform: uppercase;
+    text-decoration: none;
     align-items: center;
   }
-  #Connect a {
-    text-decoration: none;
+  .socials li a:hover {
+    cursor: pointer;
+    background-color: #eb5428;
+    color: #f2f2f2;
   }
-  footer h2 {
+  .side-dish-grid {
+    display: grid;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .side-grid-item:hover,
+  .side-dish-grid img:hover {
+    background-color: #f2a007;
+    cursor: pointer;
+  }
+  .side-dish h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .side-dish h3 {
+    font-size: 25px;
+    font-family: "Bebas Neue", cursive;
+    margin-top: -5px;
+    margin-left: 110px;
+  }
+  .side-dish img {
+    height: 90px;
+    width: 90px;
+    float: left;
+  }
+  .side-dish svg {
     display: inline-block;
+    margin-top: 10px;
+  }
+  .side-dish-item p {
+    margin-top: -20px;
+    margin-left: 110px;
+  }
+  .stars {
+    margin-left: 170px;
+    margin-top: -46px;
+  }
+  footer {
+    width: 414px;
+    background-color: #f2f2f2;
+    font-size: 20px;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    padding-top: 10px;
   }
   footer p {
-    margin: auto;
-    padding: 0;
-    position: relative;
-    font-family: "Bebas Neue", cursive;
-    font-weight: bold;
-    top: -400px;
-    left: 300px;
+    margin: 0px;
   }
   footer img {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    top: -780px;
-    left: 50px;
-  }
-  #text {
-    display: inline-block;
-    width: 670px;
-    position: absolute;
-    padding-left: 10px;
-    line-height: 30px;
-  }
-  #topNav,
-  #tacoImg,
-  #text {
-    margin-bottom: -900px;
+    width: 150px;
+    height: 150px;
+    padding-top: 10px;
   }
 }
